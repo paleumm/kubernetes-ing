@@ -1,5 +1,7 @@
 # Basic Components
 
+[EN](./README-EN.md)/[TH](./README.md)
+
 อันนี้รูปส่วนประกอบของ K8S Cluster แบบคร่าวๆ เอามาจาก[นี่](https://www.trendmicro.com/vinfo/us/security/news/security-technology/the-basics-of-keeping-your-kubernetes-cluster-secure-part-1)
 ![](https://documents.trendmicro.com/images/TEx/articles/diagram-of-a-Kubernetes-cluster-and-its-components.jpg) 
 
