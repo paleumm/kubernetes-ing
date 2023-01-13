@@ -1,8 +1,11 @@
 # Prerequisites
 
+[EN](./README-EN.md)/[TH](./README.md)
+
 1. **ต้องมี** K8S cluster ก่อน
     มีหลายวิธีที่เราสามารถ setup K8S Cluster ได้ เลยไม่มี tutorial ให้ดู ดังนั้นจะแปะลิงค์ไว้ให้ละกัน
     - [minikube](https://www.digitalocean.com/community/tutorials/how-to-use-minikube-for-local-kubernetes-development-and-testing) แนะนำ มันลงง่าย
+    - [kind](https://kind.sigs.k8s.io/docs/user/quick-start/) ลงง่ายกว่า minikube
     - [kubespray](https://github.com/kubernetes-sigs/kubespray) ถ้าลงอันนี้ได้ repo ผมคงไม่มีประโยชน์กับคุณเท่าไหร่แล้ว (ล้อเล่นนะ)
     - [kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/) ไม่รู้เหมือนกัน ไม่เคยใช้
     - [k3s](https://docs.k3s.io/installation) อันนี้ lightweight แต่จะมีบาง features ที่ไม่มีเหมือน k8s ปกติ
