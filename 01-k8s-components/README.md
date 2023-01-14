@@ -24,3 +24,12 @@ niban     Ready    <none>                 2d6h   v1.25.4+k3s1
 - `AGE` : บอกว่า node นั้นมีอายุเท่าไหร่ (นับจากตอนสร้าง ไม่ได้นับ uptime)
 - `VERSION` : version ของ kubernetes ที่ใช้ อย่างในตัวอย่างใช้ k3s เลยกลายเป็น `v1.25.4+k3s1`
 
+ในส่วนของคำสั่ง `Kubectl get nodes` เป็นคำสั่งที่อยู่ในหมวด `get` ซึ่งจะตามด้วย resource type เช่น `node, pod, service` 
+นอกจากคำสั่ง `get` แล้ว เราสามารถใช้คำสั่ง `describe` เพื่อให้ตัว api แสดงผลเกี่ยวกับ resource type ที่เรากำหนดแบบละเอียดยิ่งขึ้น 
+
+```bash
+kubectl describe node ichiban
+```
+
+ซึ่งคำสั่งนี้จะแสดงผลรายละเอียดต่างของ node ichiban ซึ่ง ichiban เป็นชื่อ node ที่ผมกำหนดขึ้นมาใน Cluster ผม ดังนั้นชื่อ node ของแต่ละคนจะแตกต่างกันไป สามารถใช้คำสั่ง get node เพื่อดูได้ว่าชื่อ node ของเรามีอะไรบ้าง ไม่งั้นจะเจอ error ประมาณว่า 
+`Error from server (NotFound): nodes "mai-ru" not found`
