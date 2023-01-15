@@ -33,3 +33,7 @@ kubectl describe node ichiban
 
 ซึ่งคำสั่งนี้จะแสดงผลรายละเอียดต่างของ node ichiban ซึ่ง ichiban เป็นชื่อ node ที่ผมกำหนดขึ้นมาใน Cluster ผม ดังนั้นชื่อ node ของแต่ละคนจะแตกต่างกันไป สามารถใช้คำสั่ง get node เพื่อดูได้ว่าชื่อ node ของเรามีอะไรบ้าง ไม่งั้นจะเจอ error ประมาณว่า 
 `Error from server (NotFound): nodes "mai-ru" not found`
+
+# Namespace
+
+ใน K8S Cluster นั้นอาจจะไม่ได้มีเพียง 1-2 อย่างที่เราทำการ Deploy ไว้ อาจจะมีเยอะถึงขนาดหลายร้อยหรือหลายพันอย่าง ดังนั้นเราจึงต้องทำการแบ่งแยกออกเป็นกลุ่มๆ โดยจะเรียกว่า `Namespace` โดยตัว namespace นั้นจะเสมือนเป็นการแบ่งให้แยกออกจากกัน เช่น หากเรามี Web Server A ที่ต้อง Deploy ไว้ เราสามารถสร้าง namespace A และนำทุกอย่างที่เกี่ยวข้องกับการ Deploy Web Server A ไปใส่รวมกันใน namespace นั้น 
